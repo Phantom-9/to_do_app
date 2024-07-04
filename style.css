@@ -1,0 +1,142 @@
+body{
+  background: linear-gradient(90deg, rgba(57,41,40,1) 9%, rgba(74,74,77,1) 29%, rgba(112,195,211,1) 69%);
+  font-family:sans-serif;
+}
+
+.container{
+  height:auto;
+  min-height: 300px;
+  border:1p solid #eee;
+  box-shadow:0px 0px 2px 3px black;
+  max-width:500px;
+  margin:auto;
+  border-radius:4px;
+  padding:10px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.container h1{
+  text-align:center;
+  font-size:30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:lightgrey;
+  border-radius:30px;
+  padding-left:20px;
+  margin-bottom:25px;
+}
+
+input{
+  flex:1;
+  border:none;
+  outline:none;
+  background:transparent;
+  padding:10px;
+}
+
+button{
+  border:none;
+  outline:none;
+  padding:16px 50px;
+  background:orange;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:40px;
+}
+
+ul{
+  display:flex;
+  flex-direction:column;
+  padding:0;
+  margin:0;
+}
+
+#list-container{
+  
+  height: 300px;
+  max-height:300px ;
+  min-height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+ul li{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  list-style:none;
+  font-size:20px;
+  padding:5px;
+  cursor:pointer;
+  user-select:none;
+  position:relative;
+  gap:10px;
+  
+}
+ul li h3{
+  margin:0;
+  font-size:14px;
+}
+#my-checkbox{
+   width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  max-width:24px;
+}
+
+
+/* ul li.checked{
+  color:#555;
+  text-decoration:line-through
+} */
+
+.delete{
+  position: absolute;
+  right: 0%;
+  top: 5px;
+  background-color: white;
+  color : black;
+  border : 2px solid black;
+  padding : 5px 10px;
+  /* marginLeft : 140px; */
+  cursor :pointer;
+}
+
+.delete:hover{
+  background-color: orange;
+  color: white;
+  border: none;
+}
+#my-checkbox:checked {
+            background-color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .counter{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 30px;
+          width: 100%;
+          border: 1px solid grey;
+          border-left: none;
+          border-right: none;
+          border-bottom: none;
+          background: #fff;
+        }
